@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="main_button_text">Click to go to 2nd activity!</string>
+    <string name="second_button_text">Click to go to 1st activity!</string>
+    <string name="edit_text_string">Write what you want to pass</string>
+    <string name="main_label">Here you will see the text from the second activity</string>
+    <string name="second_label">Here you will see the text from the main activity</string>
+    <string name="photo_button_text">Click to take a photo!</string>
+    <string name="photo_display_text">Click here to display photo!</string>
+    <string name="photo_name">Nice photo</string>
+</resources>
