@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -17,10 +16,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, second.class);
+        Intent intent = new Intent(this, SecondActivity.class);
         EditText editText = (EditText) findViewById(R.id.main_editText);
         String message = editText.getText().toString();
         intent.putExtra("EXTRA_MESSAGE", message);
+        startActivity(intent);
+    }
+
+    public void goDrawing(View view) {
+        Intent intent = new Intent(this, DrawingActivity.class);
         startActivity(intent);
     }
 }

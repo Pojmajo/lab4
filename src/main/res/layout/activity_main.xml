@@ -8,8 +8,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="238dp"
-        android:layout_height="197dp"
+        android:layout_width="237dp"
+        android:layout_height="338dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,8 +20,8 @@
             android:id="@+id/main_button"
             android:layout_width="match_parent"
             android:layout_height="84dp"
-            android:text="@string/main_button_text"
-            android:onClick="sendMessage"/>
+            android:onClick="sendMessage"
+            android:text="@string/main_button_text" />
 
         <EditText
             android:id="@+id/main_editText"
@@ -36,5 +36,12 @@
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:text="@string/main_label" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:text="@string/drawing"
+            android:onClick="goDrawing"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

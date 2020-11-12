@@ -7,11 +7,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class photoDisplay extends AppCompatActivity {
+public class PhotoDisplay extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +29,7 @@ public class photoDisplay extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, second.class);
+        Intent intent = new Intent(this, SecondActivity.class);
         EditText editText = (EditText) findViewById(R.id.main_editText);
         String message = "Check photo!";
         intent.putExtra("EXTRA_MESSAGE", message);

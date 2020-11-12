@@ -10,14 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab4">
         <activity
-            android:name=".photoDisplay"
-            android:parentActivityName=".second">
+            android:name=".PhotoDisplay"
+            android:parentActivityName=".SecondActivity">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".second" />
+            android:value=".SecondActivity" />
         </activity>
         <activity
-            android:name=".second"
+            android:name=".SecondActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DrawingActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

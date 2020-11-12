@@ -13,7 +13,6 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.File;
@@ -21,7 +20,7 @@ import java.io.IOException;
 import java.util.Date;
 
 
-public class second extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,7 +81,7 @@ public class second extends AppCompatActivity {
     }
 
     public void displayPhoto(View view) {
-        Intent intent = new Intent(this, photoDisplay.class);
+        Intent intent = new Intent(this, PhotoDisplay.class);
         intent.putExtra("EXTRA_PHOTO_PATH", currentPhotoPath);
         startActivity(intent);
     }

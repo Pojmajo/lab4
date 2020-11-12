@@ -8,4 +8,5 @@
     <string name="photo_button_text">Click to take a photo!</string>
     <string name="photo_display_text">Click here to display photo!</string>
     <string name="photo_name">Nice photo</string>
+    <string name="drawing">Drawing</string>
 </resources>
